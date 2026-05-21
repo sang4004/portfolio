@@ -874,6 +874,54 @@ body.modal-open {
 .modal-content strong {
   color: var(--ink);
 }
+.modal-content table {
+  width: 100%;
+  margin: 20px 0 28px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.modal-content th,
+.modal-content td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--hairline);
+  text-align: left;
+  vertical-align: top;
+  color: var(--ink-muted-80);
+}
+.modal-content th {
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--surface-pearl);
+}
+.modal-content td:first-child,
+.modal-content th:first-child {
+  white-space: nowrap;
+}
+.modal-content details {
+  margin: 14px 0;
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-sm);
+  background: var(--surface-pearl);
+  overflow: hidden;
+}
+.modal-content summary {
+  padding: 12px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+}
+.modal-content details > p,
+.modal-content details > img {
+  margin: 0;
+  padding: 0 14px 14px;
+}
+.modal-content details img {
+  width: 100%;
+  border-radius: var(--r-xs);
+}
 
 @media (prefers-color-scheme: dark) {
   /* Removed modal dark mode overrides to keep it white */
@@ -885,5 +933,11 @@ body.modal-open {
   }
   .modal-header, .modal-content {
     padding: 20px;
+  }
+  .modal-content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
   }
 }
