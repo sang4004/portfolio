@@ -223,19 +223,19 @@
         </p>
 
         <div class="project-meta">
-          <span class="chip chip--dark">Next.js 15 (App Router)</span>
+          <span class="chip chip--dark">Next.js (App Router)</span>
+          <span class="chip chip--dark">TypeScript</span>
           <span class="chip chip--dark">React Query</span>
           <span class="chip chip--dark">Zustand</span>
           <span class="chip chip--dark">Zod</span>
-          <span class="chip chip--dark">ECharts · Nivo</span>
           <span class="chip chip--dark">SCSS</span>
         </div>
 
         <ul class="bullets bullets--dark">
-          <li><strong>4인 프론트엔드 팀에서 초기 아키텍처 설계 주도</strong> 및 기술 방향 결정</li>
-          <li>LangGraph 기반 API의 단방향 스트림 구조를 파악해 SSE으로 설계, <strong>청크 수신 → 파싱 → UI 렌더링</strong>까지의 스트리밍 파이프라인 구현</li>
-          <li>Nivo, ECharts 기반 <strong>26종 데이터 시각화 컴포넌트</strong> 설계. 이미지 캡처 export · 분석 결과 텍스트 박스 등을 독립 컴포넌트로 설계해 <strong>조합만으로 신규 차트가 완성</strong>되는 구조 구축</li>
-          <li><strong>메시지 타입 기반 대화형 UI</strong>로 LLM 교체·기능 확장에도 구조 수정 없이 대응 가능한 아키텍처 구축</li>
+          <li><strong>초기 아키텍처 설계 주도</strong> 후 현재 플랫폼 전반을 운영·고도화 중. 인텐트릭스, 마켓 인텔리전스 26, GEO Studio 등 <strong>8종 에이전트 서비스</strong> 단계적 구축</li>
+          <li><strong>메시지 타입 기반 대화형 UI 설계</strong>, 텍스트·차트·테이블·문서·CTA 등 결과 형태로 메시지 타입을 분리해 LLM·기능 확장 시 타입별 컴포넌트 추가만으로 대응</li>
+          <li>운영 중 단순 API 기반 <strong>마켓 인텔리전스를 SSE/LangGraph로 전면 재구축</strong>. 새 API 응답 구조에 맞춰 <strong>매핑 레이어만 재구성</strong>해 차트 형태는 그대로 보존, 신규 구축(5~6주) 대비 <strong>1주일에 기본 동작 확보</strong></li>
+          <li>운영 중 사내/사외 환경의 <strong>메뉴·흐름·권한을 모두 다르게</strong> 해달라는 요구에 별도 빌드 대신 <strong>사용자 권한 기반 런타임 분기 구조</strong>로 한 코드베이스에서 두 환경 운영</li>
         </ul>
         <div class="project-actions">
           <button class="btn btn--outline" data-project="hsad">기술 상세보기 ↗</button>
